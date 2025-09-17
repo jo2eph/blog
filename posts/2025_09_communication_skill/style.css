@@ -1,3 +1,7 @@
+html {
+    background-color: rgb(44, 44, 44);
+}
+
 main {
     background-color: rgb(232, 240, 247);
     border: 1px solid #ccc;
@@ -18,7 +22,7 @@ main h2 {
     margin-top: 32px;
 }
 main h3 {
-    color: #404ca4;
+    color: #2a3586;
     font-size: 24px;
     margin-bottom: 16px;
     margin-top: 32px;
