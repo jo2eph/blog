@@ -4,10 +4,14 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color: rgb(44, 44, 44);
     color: #333;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
+}
+
+main {
+    background-color: aliceblue;
 }
 
 header {
@@ -17,3 +21,115 @@ header {
     text-align: center;
 }
 
+.blog-cards-container {
+    background-color: rgba(0, 0, 0, 0.051);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 42px;
+}
+
+.blog-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 28px;
+    margin: auto;
+    width: clamp(300px, 90%, 600px);
+}
+
+.blog-title {
+    font-weight: bold;
+    margin-bottom: 6px;
+    margin-top: 8px;
+}
+.blog-title a {
+    color: #0b273a;
+    font-size: 1.6em;
+    text-decoration: none;
+}
+.blog-title a:hover {
+    color: rgba(25, 31, 72, 0.743);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.blog-summary {
+    color: rgba(5, 19, 63, 0.464);
+    font-size: 1.3em;
+    margin-bottom: 4px;
+    margin-top: 6px;
+    padding: 0px 2px;
+}
+
+.blog-description-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.blog-author-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6px;
+}
+
+.blog-author img {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.286);
+    height: 78px;
+    max-width: 100%;
+    margin-left: 10px;
+    margin-bottom: 14px;
+    margin-top: 12px;
+    object-fit: cover;
+}
+
+.blog-author-name {
+    color: rgba(4, 5, 50, 0.943);
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.blog-publish-container {
+    margin-left: 12px;
+}
+
+.blog-publish-date {
+    color: rgba(0, 0, 0, 0.421);
+    font-size: 1.1em;
+    margin-left: 15px;
+}
+
+.blog-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+}
+.tag {
+    background-color: #e2e2e2;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.237);
+    color: #27272cd3;
+    font-size: 0.99em;
+    padding: 5px 10px;
+}
+
+@media
+    only screen
+    and (min-width: 760px) 
+{
+    .blog-card {
+        width: 70%;
+        max-width: 700px;
+    }
+}
