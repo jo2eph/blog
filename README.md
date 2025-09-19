@@ -16,6 +16,7 @@ Any [correction or suggestion](https://github.com/jo2eph/blog/issues/new) is gre
 
 ---
 
-## Highlights
+## Some Highlighted Blogs
 
-- [The One Skill Every STEM Major Needs — But No One Teaches](https://jo2eph.github.io/blog/posts/2025_09_communication_skill/index.html)
+- [The One Skill Every STEM Major Needs — But No One Teaches](https://jo2eph.github.io/blog/posts/2025/09_17_communication_skill/)
+- [A Reflection on UChicago's "Craft of Writing Effectively"](https://jo2eph.github.io/blog/posts/2025/09_18_reflection_on_uchicago_writing/)
