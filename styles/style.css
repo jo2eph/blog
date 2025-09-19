@@ -35,13 +35,19 @@ header {
     background: #ffffff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.196);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     padding: 28px;
     margin: auto;
     width: clamp(300px, 90%, 600px);
+}
+.blog-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    /* transform: scale(1.02); */
+    transition: all 0.3s ease;
 }
 
 .blog-title {
@@ -119,7 +125,7 @@ header {
     background-color: #e2e2e2;
     border-radius: 5px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.237);
-    color: #27272cd3;
+    color: #27272c9a;
     font-size: 0.99em;
     padding: 5px 10px;
 }
