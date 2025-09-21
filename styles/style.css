@@ -75,6 +75,7 @@ header {
     flex-wrap: wrap;
     flex-direction: column;
     margin: 8px auto;
+    margin-bottom: 20px;
     overflow: wrap;
     padding: clamp(8px, 3%, 24px);
     width: clamp(50px, 90%, 420px);
