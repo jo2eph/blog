@@ -22,21 +22,50 @@ main {
 header {
     background: #35424a;
     color: #ffffff;
+    overflow: wrap;
     padding: 20px 0;
+    text-align: center;
+    width: 100vw;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px 20px;
+    width: clamp(100px, 90%, 900px);
+}
+#header h1 {
+    font-size: clamp(2em, 5vw, 3em);
+    margin-bottom: 10px;
+    overflow: wrap;
+    text-align: center;
+    width: 90vw;
+}
+#header p {
+    font-size: clamp(1em, 2.5vw, 1.5em);
+    margin-top: 10px;
+    overflow: wrap;
     text-align: center;
 }
 
+
+/* BLOG CARDS CONTAINER */
 .blog-cards-container {
     background-color: rgba(0, 0, 0, 0.051);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
     gap: 20px;
+    justify-content: center;
+    margin: 12px auto;
     padding: clamp(16px, 5%, 24px);
-    margin: 0px auto;
+    width: clamp(100px, 90%, 900px);
 }
 
+/* BLOG CARD */
 .blog-card {
     background: #ffffff;
     border: 1px solid #ddd;
@@ -45,25 +74,43 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: clamp(16px, 3%, 24px);
     margin: 8px auto;
-    width: clamp(100px, 90%, 420px);
+    overflow: wrap;
+    padding: clamp(8px, 3%, 24px);
+    width: clamp(50px, 90%, 420px);
 }
 .blog-card:hover {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     transform: translateY(-5px);
-    /* transform: scale(1.02); */
     transition: all 0.3s ease;
 }
 
+/* BLOG COVER IMAGE */
+.blog-image {
+    margin: 8px auto;
+    height: clamp(50px, 60%, 420px);
+    width: clamp(50px, 100%, 650px);
+}
+.blog-image img {
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.262);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.233);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* BLOG TITLE */
 .blog-title {
     font-weight: bold;
     margin-bottom: 6px;
     margin-top: 8px;
+    padding: 0px 6px;
+    text-align: center;
+    max-width: 100%;
 }
 .blog-title a {
     color: #0b273a;
-    font-size: 1.6em;
+    font-size: clamp(1.2em, 2vw, 1.6em);
     text-decoration: none;
 }
 .blog-title a:hover {
@@ -72,20 +119,27 @@ header {
     text-decoration: underline;
 }
 
+/* BLOG SUMMARY */
 .blog-summary {
     color: rgba(5, 19, 63, 0.464);
-    font-size: 1.3em;
-    margin-bottom: 4px;
+    font-size: clamp(0.95em, 1.5vw, 1.1em);
+    margin-bottom: clamp(4px, 2%, 8px);
     margin-top: 6px;
+    overflow: wrap;
     padding: 0px 2px;
+    width: 80%;
+    max-width: 90%;
 }
 
 .blog-description-container {
     display: flex;
     flex-direction: column;
+    margin: auto;
     margin-bottom: 16px;
+    width: 100%;
 }
 
+/* AUTHOR AND PUBLISH DATE */
 .blog-author-container {
     align-items: center;
     display: flex;
@@ -122,10 +176,11 @@ header {
     margin-left: 15px;
 }
 
+/* TAGS */
 .blog-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 26px;
+    gap: clamp(8px, 2%, 24px);
 }
 .tag {
     background-color: #e2e2e2;
@@ -133,15 +188,64 @@ header {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.237);
     color: #27272c9a;
     font-size: 0.99em;
+    overflow: wrap;
     padding: 5px 10px;
 }
 
+
+/* TABLET */
 @media
     only screen
-    and (min-width: 760px) 
+    and (min-width: 680px) 
 {
+    #blog-cards-container {
+        flex-direction: row;
+        width: clamp(100px, 85%, 900px);
+    }
+
     .blog-card {
-        width: 70%;
-        max-width: 700px;
+        width: clamp(200px, 68%, 560px);
+    }
+
+    .blog-summary {
+        font-size: clamp(1em, 1.2vw, 1.1em);
+        width: clamp(70%, 90%, 100%);
+    }
+
+    .blog-image img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+/* DESKTOP */
+@media
+    only screen
+    and (min-width: 1000px)
+{
+    #blog-cards-container {
+        flex-direction: row;
+        width: clamp(100px, 85%, 1600px);
+    }
+
+    .blog-card {
+        flex-direction: row;
+        width: clamp(300px, 60%, 1200px);
+    }
+
+    .blog-image img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .blog-title {
+        text-align: left;
+        font-size: clamp(1.1em, 2vw, 1.4em);
+    }
+
+    .blog-summary {
+        font-size: clamp(0.8em, 1.3vw, 1.2em);
+        width: clamp(60%, 98%, 100%);
     }
 }
