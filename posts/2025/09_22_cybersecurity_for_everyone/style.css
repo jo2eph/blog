@@ -76,6 +76,12 @@ details {
     margin-left: 6px;
     text-decoration: none;
 }
+#contents a:hover {
+    color: rgba(14, 20, 86, 0.894);
+    cursor: pointer;
+    margin-left: 6px;
+    text-decoration: underline;
+}
 
 .examples {
     font-size: 24px;
