@@ -68,6 +68,20 @@ details {
     margin-bottom: 24px;
     padding: 16px;
 }
+#contents li {
+    margin-bottom: 4px;
+}
+#contents a {
+    color: rgba(14, 20, 86, 0.894);
+    margin-left: 6px;
+    text-decoration: none;
+}
+
+.examples {
+    font-size: 24px;
+    margin-bottom: 8px;
+    text-align: center;
+}
 
 .quote {
     border-left: 4px solid #ccc;

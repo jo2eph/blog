@@ -494,7 +494,7 @@
                     according to the National Institute of Standards and Technology (NIST):
                     <ul>
                         <li>
-                            Passwords should be <b>at least 12 characters long</b>,
+                            Passwords should be <b>at least 8 characters long</b>,
                             but longer is better.
                         </li>
                         <li>
@@ -504,9 +504,16 @@
                             <b>Do NOT use common words or phrases</b>, such as &quot;password&quot; or &quot;123456&quot;.
                         </li>
                         <li>
-                            <b>Avoid using personal information</b>, such as your name, birthdate, or address.
+                            <b>Do NOT personal information</b>, such as your name, birthdate, or address.
+                        </li>
+                        <li>
+                            <b>Do NOT use hints</b> in passwords.
                         </li>
                     </ul>
+                    You can read the NIST guidelines here:
+                    <a href="https://pages.nist.gov/800-63-4/sp800-63b.html#passwordver" title="NIST SP 800-63B">
+                        NIST SP 800-63B
+                    </a>
                 </p>
                 <p>
                     Of course, strong passwords can be difficult to remember, especially when you have a lot of them.
@@ -533,6 +540,11 @@
                     So, if you&apos;re not already using one, consider getting a reputable password manager.
                     <br>
                     (Some popular options include Bitwarden, 1Password, or LastPass.)
+                    <br>
+                    Note that many web browsers, such as Google Chrome, Firefox,
+                    have built-in password managers.
+                    However, it is generally recommended to use a trusted, third-party password manager,
+                    as it often offers superior security and better features.
                 </p>
             </section>
 
@@ -769,37 +781,68 @@
                     which you can usually see in the bottom left corner of your web browser.
                 </p>
                 <p>
-                    For example, hover over the following link that looks like it leads to Google:
+                    For example, hover over (but don&apos;t click) the following link that looks like it leads to Google:
                 </p>
-                <p>
+                <div class="examples">
                     <a href="https://www.youtube.com" title="Google">
                         https://www.google.com
                     </a>
+                </div>
+                <p>
+                    Notice how even though the link says &quot;https://www.google.com&quot;, it actually leads to YouTube.
                 </p>
                 <p>
-                    Notice how even though the text says &quot;https://www.google.com&quot;, it actually leads to YouTube.
-                    <br>
                     This example is harmless, but you can imagine how this technique can be used for malicious purposes.
                     <br>
-                    The link text can say anything, but the actual URL can take you to a completely different website, usually a fake one designed to steal your information.
+                    The link can say anything, but the actual URL can take you to a completely different website, usually a fake one designed to steal your information.
                 </p>
                 <p>
                     If the URL looks suspicious or doesn&apos;t match the text of the link, don&apos;t click on it.
                     <br>
                     Instead, go directly to the website by typing the URL into your web browser&apos;s address bar.
                 </p>
+
+                <h3>
+                    8.5 Be Cautious of Lookalike Websites
+                </h3>
                 <p>
-                    Also, be cautious of shortened URLs (like bit.ly links), as they can hide the true destination.
+                    <b>Be careful of websites with names very similar to that of legitimate ones.</b>
+                </p>
+                <p>
+                    For example:
+                    <div class="examples">
+                        &quot;example&quot; | &quot;еxample&quot;
+                    </div>
+                    At first glance, they look exactly the same.
+                    But they are actually completely different.
                     <br>
+                    In the one on the right, that is not the English letter &apos;e&apos;.
+                    <br>
+                    That is actually a Cyrillic character (used in Russian) that looks like the letter &apos;e&apos;.
+                </p>
+                <p>
+                    Attackers use this to their advantage.
+                    They use tricks like this to create fake websites that appear legitimate.
+                    If you&apos;re not paying close attention, 
+                    you might unknowingly visit a malicious website that looks exactly like a trusted website, and give away your info.
+                    <br>
+                    This is an attack known as a <b>homograph attack</b>.
+                </p>
+
+                <h3>
+                    8.6 Be Cautious of Shortened URL
+                </h3>
+                <p>
+                    Another thing to keep in mind: <b>be cautious of shortened URLs</b> (like bit.ly links), as they can hide the true destination.
                     Use a URL expander service to see the full URL before clicking on it.
                 </p>
                 <p>
-                    Get into the habit of NEVER trusting any link you see,
+                    Get into the habit of NEVER trusting anything you see,
                     ALWAYS verifying everything.
                 </p>
 
                 <h3>
-                    8.5 Verify the Website&apos;s Security
+                    8.7 Verify the Website&apos;s Security
                 </h3>
                 <p>
                     Before entering any sensitive information on a website, 
@@ -811,7 +854,7 @@
                 </p>
 
                 <h3>
-                    8.6 Trust Your Instincts
+                    8.8 Trust Your Instincts
                 </h3>
                 <p>
                     If something seems off, or too good to be true, it probably is.
@@ -822,7 +865,7 @@
                 </p>
 
                 <h3>
-                    8.7 NEVER Trust, ALWAYS Verify
+                    8.9 NEVER Trust, ALWAYS Verify
                 </h3>
                 <p>
                     NEVER trust anything or anyone by default.
@@ -849,7 +892,8 @@
                 </h2>
                 
                 <p>
-                    Here are some recommended best practices and habits to help you stay safe online (<i>Note that some of these are repeats of what has been said earlier, but these are worth repeating</i>):
+                    Here are some recommended best practices and habits to help you stay safe online 
+                    <br>(<i>Note that some of these are repeats of what has been said earlier, but these are worth repeating</i>):
                 </p>
                 <p>
                     <b>NEVER trust, ALWAYS verify:</b>
@@ -859,12 +903,15 @@
                             It is one of the best ways to stay safe online.
                         </li>
                         <li>
-                            Always check links, sender identities, and the legitimacy of requests.
+                            Default to NEVER trusting anyone or any link, message, email, file, etc. you see or receive online.
+                        </li>
+                        <li>
+                            ALWAYS check links, sender identities, and the legitimacy of requests.
                         </li>
                     </ul>
                 </p>
                 <p>
-                    <b>Avoiding using public Wi-Fi:</b>
+                    <b>Avoid using public Wi-Fi:</b>
                     <ul>
                         <li>
                             Public Wi-Fi networks are often unsecured, which makes it easier for attackers to intercept and steal your information.
@@ -1049,7 +1096,7 @@
                             The opposite of encryption: converting ciphertext back into plaintext using the appropriate key.
                         </li>
                         <li>
-                            <b>Symmetric cryptography:</b> 
+                            <b>Symmetric cryptography:</b>
                             <br>
                             Uses the same key for both encryption and decryption.
                             This is fast and efficient, but sharing the same key securely can be difficult.
@@ -1061,18 +1108,24 @@
                             <br>
                             The public key is used for encryption, while the private key is used for decryption.
                             <br>
-                            As the name suggests, public keys can be shared with anyone, while the private key must be kept secret.
+                            As the name suggests, public keys can be shared with anyone, while privates key must be kept secret at all times.
                         </li>
                         <li>
-                            Many secure websites use asymmetric cryptography through HTTPS, which allows your browser to encrypt data sent to the server without needing a shared key.
+                            <b>Hybrid cryptography:</b>
+                            <br>
+                            is a combination of both symmetric and asymmetric cryptography,
+                            combining the strengths of both cryptographic systems.
+                        </li>
+                        <li>
+                            Many secure websites uses hybrid cryptography through HTTPS, which allows your browser to encrypt data sent to the server without needing a shared key.
                         </li>
                     </ul>
                 </p>
                 <p>
                     Once again, you do not need to understand the details of how cryptography works, or the math behind it.
                     <br>
-                    As a matter of fact, you should not try to implement your own cryptographic systems.
-                    These are best left to experts who dedicate their lives to rigorously researching and improving cryptography.
+                    As a matter of fact, you should <i>not</i> try to implement your own cryptographic systems.
+                    These are best left to experts, mathematicians, and computer scientists who dedicate their lives to rigorously researching and improving cryptography.
                     <br>
                     The key takeaway here is that 
                     <b>cryptography is a powerful tool for your online security</b>,
@@ -1157,7 +1210,7 @@
                             A very brief overview on cryptography
                         </b>
                         <br>
-                        The math and algorithms that help keep your information secure behind the scenes.
+                        The math and algorithms that help keep your information secure.
                     </li>
                 </ul>
             </section>
@@ -1176,7 +1229,7 @@
                 </p>
                 <p>
                     The key takeaway is simple:
-                    <b>cybersecurity is for everyone, not just tech experts</b>.
+                    <b>cybersecurity is for everyone, regardless of technical expertise</b>.
                     <br>
                     It&apos;s a shared responsibility, and by taking even basic steps, you can dramatically reduce your risk and help protect yourself and others online.
                 </p>
@@ -1186,8 +1239,7 @@
                 </p>
                 <p>
                     Of course, <b>there is no such thing as 100% secure</b>. 
-                    But cybersecurity isn&apos;t about perfection; it&apos;s about awareness, preparation, and smart habits. 
-                    And the more informed you are, the safer you will be.
+                    But cybersecurity isn&apos;t about perfection; it&apos;s about awareness, preparation, and smart habits and practices.
                 </p>
                 <p>
                     Remember: cybersecurity is not a one-time action. 
