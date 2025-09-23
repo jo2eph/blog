@@ -20,3 +20,4 @@ Any [correction or suggestion](https://github.com/jo2eph/blog/issues/new) is gre
 
 - [The One Skill Every STEM Major Needs — But No One Teaches](https://jo2eph.github.io/blog/posts/2025/09_15_communication_skill/)
 - [A Reflection on UChicago's "Craft of Writing Effectively"](https://jo2eph.github.io/blog/posts/2025/09_18_reflection_on_uchicago_writing/)
+- [Cybersecurity for Everyone: Protect Yourself Online Without Being a Tech Expert](https://jo2eph.github.io/blog/posts/2025/09_22_cybersecurity_for_everyone/)
