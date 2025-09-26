@@ -124,6 +124,15 @@ details {
     text-align: center;
 }
 
+#additional-resources a {
+    padding-left: 4px;
+    text-decoration: none;
+}
+#additional-resources a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 
 @media 
     only screen and
