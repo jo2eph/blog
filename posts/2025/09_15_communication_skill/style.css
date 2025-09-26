@@ -2,6 +2,11 @@ html {
     background-color: rgb(44, 44, 44);
 }
 
+#blog-header {
+    background-image: url("../../../assets/09_15_2025_The_One_Skill_Every_STEM_Major_Needs.jpg");
+    background-size: cover;
+}
+
 main {
     background-color: rgb(232, 240, 247);
     border: 1px solid #ccc;

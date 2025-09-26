@@ -2,6 +2,11 @@ html {
     background-color: rgb(44, 44, 44);
 }
 
+#blog-header{
+    background-image: url("../../../assets/09_22_2025_Cybersecurity_for_Everyone.png");
+    background-size: cover;
+}
+
 main {
     background-color: rgb(232, 240, 247);
     border: 1px solid #ccc;

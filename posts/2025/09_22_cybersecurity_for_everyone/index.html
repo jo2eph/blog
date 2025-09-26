@@ -12,9 +12,10 @@
 
     <!-- CSS 
      ============================================== -->
-     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../../../styles/style.css">
     <link rel="stylesheet" href="../../../styles/footer.css">
+    <link rel="stylesheet" href="../../../styles/nav.css">
 
     <!-- Others
      ============================================== -->
@@ -27,11 +28,105 @@
         <i class="bx bxs-up-arrow-circle"></i>
     </div>
 
-    <nav>
-        
+    <nav id="navbar">
+        <div id="nav-left">
+            <a href="https://jo2eph.github.io/" id="logo-icon" title="Joseph Lee">
+                <i class="bx bxs-home" ></i>
+            </a>
+        </div>
+        <div id="nav-middle">
+            <p>
+                
+            </p>
+        </div>
+        <div id="nav-right">
+            <ul>
+                <li>
+                    <a href="mailto:junhyuk.x.lee@gmail.com" target="_blank" rel="noopener noreferrer"
+                        title="Send me an email">
+                        <i class="bx bxs-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/jo2eph/" target="_blank"
+                        rel="noopener noreferrer" title="Connect with me on LinkedIn">
+                        <i class="bx bxl-linkedin-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/jo2eph" target="_blank" rel="noopener noreferrer"
+                        title="Follow me on GitHub">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- MOBILE MENU -->
+        <div id="mobile-menu" class="hidden">
+            <i class="bx bx-menu" id="mobile-menu-button"></i>
+            
+            <div id="mobile-nav-container" class="hidden">
+
+                <!-- SECTION LINKS -->
+                <div id="mobile-nav" class="hidden">
+                    <ul>
+                        <li>
+                            <a href="#home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#education">
+                                Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#blog">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects">
+                                Projects
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- SOCIAL LINKS -->
+                <div id="mobile-social" class="hidden">
+                    <ul>
+                        <li>
+                            <a href="mailto:junhyuk.x.lee@gmail.com" target="_blank" rel="noopener noreferrer"
+                                title="Send me an email">
+                                <i class="bx bxs-envelope"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/jo2eph/" target="_blank"
+                                rel="noopener noreferrer" title="Connect with me on LinkedIn">
+                                <i class="bx bxl-linkedin-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/jo2eph" target="_blank" rel="noopener noreferrer"
+                                title="Follow me on GitHub">
+                                <i class="bx bxl-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </nav>
     
-    <header>
+    <header id="blog-header">
         <h1>
             Cybersecurity for Everyone: 
             <br>
@@ -44,6 +139,15 @@
             <p>Modified: September 23, 2025</p>
         </div>
     </header>
+
+    <div id="back">
+        <a href="https://jo2eph.github.io/blog/">
+            <i class="bx bxs-left-arrow-circle"></i>
+            <span>
+                Back
+            </span>
+        </a>
+    </div>
 
     <main>
         <article>

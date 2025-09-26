@@ -2,6 +2,11 @@ html {
     background-color: rgb(44, 44, 44);
 }
 
+#blog-header {
+    background-image: url('../../../assets/09_18_2025_Reflection_on_UChicago_Craft_of_Writing_Effectively.png');
+    background-size: cover;
+}
+
 main {
     background-color: rgb(232, 240, 247);
     border: 1px solid #ccc;
