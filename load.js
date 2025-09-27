@@ -22,6 +22,14 @@ const allBlogs = [
         "tags": ["Cybersecurity", "Cryptography", "Online Safety"],
         "title": "Cybersecurity for Everyone: Protect Yourself Online Without Being a Tech Expert",
         "url": "https://jo2eph.github.io/blog/posts/2025/09_22_cybersecurity_for_everyone",
+    },
+    {
+        "cover": "./assets/placeholder.png",
+        "published": "September 27, 2025",
+        "summary": "Summary.",
+        "tags": ["Tags"],
+        "title": "Title",
+        "url": "https://jo2eph.github.io/blog/posts/2025/09_27",
     }
 ];
 
@@ -236,54 +244,6 @@ function createBlogTags(tags) {
     return blogTags;
 }
 
-/* BLOG CARD FORMAT (Need URL, TITLE, COVER, SUMMARY, PUBLISHED, TAGS)
-    BLOG CARD HAS 3 DIV CHILDREN
-    
-<div class="blog-card">
-
-    <div class="blog-image">
-        <a href="(URL) title="(TITLE)">
-            <img src="(COVER)" alt="(TITLE)" title="(TITLE)">
-        </a>
-    </div>
-
-    <div class="blog-title">
-        <h2>
-            <a href="(URL)" title="(TITLE)">
-                (TITLE)
-            </a>
-        </h2>
-    </div>
-
-    <div class="blog-description-container">
-
-        <div class="blog-summary">
-            (SUMMARY)
-        </div>
-        
-        <div class="blog-author-container">
-            <div class="blog-author">
-                <img src="./assets/photo.jpg" alt="Joseph Lee" title="Joseph Lee">
-            </div>
-            <div class="blog-publish-container">
-                <div class="blog-author-name">
-                    Joseph Lee
-                </div>
-                <div class="blog-publish-date">
-                    (PUBLISHED)
-                </div>
-            </div>
-        </div>
-
-        <div class="blog-tags">   (TAGS)
-            <span class="tag">
-                TAG
-            </span>
-        </div>
-    </div>
-
-</div>
- */
 
 // Load Blog Cards
 const blogCardsContainer = document.getElementById("blog-cards-container");
@@ -307,3 +267,4 @@ window.addEventListener('load', () => {
     link.setAttribute("href", "./styles/blog_cards.css");
     document.head.appendChild(link);
 });
+
