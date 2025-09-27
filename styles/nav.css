@@ -40,7 +40,7 @@
     list-style-type: none;
 }
 #nav-right ul li {
-    float: right;
+    float: left;
     margin: 12px;
 }
 #nav-right ul li a {

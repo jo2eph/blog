@@ -238,7 +238,6 @@ function createBlogTags(tags) {
 
 /* BLOG CARD FORMAT (Need URL, TITLE, COVER, SUMMARY, PUBLISHED, TAGS)
     BLOG CARD HAS 3 DIV CHILDREN
-
     
 <div class="blog-card">
 
@@ -284,9 +283,7 @@ function createBlogTags(tags) {
     </div>
 
 </div>
-
  */
-
 
 // Load Blog Cards
 const blogCardsContainer = document.getElementById("blog-cards-container");

@@ -123,4 +123,9 @@ main {
     width: 50px;
     z-index: 1000;
 }
+#jump-to-top:hover {
+    color: rgba(99, 99, 138, 0.754);
+    cursor: pointer;
+    transition: 120ms;
+}
 
