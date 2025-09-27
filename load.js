@@ -12,7 +12,7 @@ const allBlogs = [
         "published": "September 18, 2025",
         "summary": "A reflection on The Craft of Writing Effectively by the University of Chicago.",
         "tags": ["Writing", "UChicago", "Reflection"],
-        "title": "A Reflection on UChicago&apos;s &quot;Craft of Writing Effectively&quot;",
+        "title": "A Reflection on UChicago's \"Craft of Writing Effectively\"",
         "url": "https://jo2eph.github.io/blog/posts/2025/09_18_reflection_on_uchicago_writing/",
     },
     {
@@ -290,12 +290,12 @@ const blogCardsContainer = document.getElementById("blog-cards-container");
 window.addEventListener('load', () => {
     // Load each blog cards into home page
     allBlogs.forEach(blog => {
-        const cover = blog["cover"];
-        const published = blog["published"];
-        const summary = blog["summary"];
-        const tags = blog["tags"];
-        const title = blog["title"];
-        const url = blog["url"];
+        let cover = blog["cover"];
+        let published = blog["published"];
+        let summary = blog["summary"];
+        let tags = blog["tags"];
+        let title = blog["title"];
+        let url = blog["url"];
 
         const blogCard = createBlogCard(cover, published, summary, tags, title, url);
         blogCardsContainer.appendChild(blogCard);
