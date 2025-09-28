@@ -262,9 +262,9 @@ window.addEventListener('load', () => {
     });
 
     // Load CSS after blog cards are finished loading
-    const link = document.createElement("link");
-    link.setAttribute("rel", "stylesheet");
-    link.setAttribute("href", "./styles/blog_cards.css");
-    document.head.appendChild(link);
+    // const link = document.createElement("link");
+    // link.setAttribute("rel", "stylesheet");
+    // link.setAttribute("href", "./styles/blog_cards.css");
+    // document.head.appendChild(link);
 });
 
