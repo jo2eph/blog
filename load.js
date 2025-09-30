@@ -260,11 +260,5 @@ window.addEventListener('load', () => {
         const blogCard = createBlogCard(cover, published, summary, tags, title, url);
         blogCardsContainer.appendChild(blogCard);
     });
-
-    // Load CSS after blog cards are finished loading
-    // const link = document.createElement("link");
-    // link.setAttribute("rel", "stylesheet");
-    // link.setAttribute("href", "./styles/blog_cards.css");
-    // document.head.appendChild(link);
 });
 
