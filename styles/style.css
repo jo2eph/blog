@@ -81,9 +81,8 @@ main {
 
 #back {
     font-size: clamp(18px, 20vw, 26px);
-    margin-bottom: 4px;
+    margin-bottom: 16px;
     position: relative;
-    left: 13%;
     width: fit-content;
 }
 #back i {
