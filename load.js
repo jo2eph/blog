@@ -25,11 +25,11 @@ const allBlogs = [
     },
     {
         "cover": "./assets/placeholder.png",
-        "published": "September 27, 2025",
+        "published": "October 2, 2025",
         "summary": "Summary.",
         "tags": ["Tags"],
         "title": "Title",
-        "url": "https://jo2eph.github.io/blog/posts/2025/09_27",
+        "url": "https://jo2eph.github.io/blog/posts/2025/10_2",
     }
 ];
 
